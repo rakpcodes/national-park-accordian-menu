@@ -298,3 +298,8 @@ html {
           justify-content: space-between;
   padding: 1.5rem 0;
 }
+
+.park-heading-btn {
+  font-size: 3rem;
+  font-weight: 900;
+}
