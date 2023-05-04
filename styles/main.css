@@ -11,6 +11,10 @@ html body h1,
 html body h2 {
   font-weight: 900;
 }
+html body .btn {
+  border: none;
+  background: transparent;
+}
 
 html {
   line-height: 1.15;
