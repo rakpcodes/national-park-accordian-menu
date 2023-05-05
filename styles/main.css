@@ -1,3 +1,16 @@
+.collapse {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.rotate {
+  rotate: 180deg;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -287,6 +300,20 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section-about .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.section-about .btn-expand {
+  border: 0.2rem solid rgb(10, 156, 214);
+  color: rgb(10, 156, 214);
+  padding: 0.5rem 1.5rem;
 }
 
 .park-heading {

@@ -1,0 +1,10 @@
+.collapse {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in;
+}
+
+.rotate {
+    rotate: 180deg;
+    transition: all 1s ease-in;
+}

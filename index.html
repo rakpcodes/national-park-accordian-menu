@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <script defer src="https://kit.fontawesome.com/9519f6733b.js" crossorigin="anonymous"></script>
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,9 @@
 
         <section class="section-about">
 
-            <button class="btn-expand btn">Expand All</button>
+            <div class="flex">
+                <button class="btn btn-expand">Expand All</button>
+            </div>
 
             <div class="park">
                 <div class="park-heading">
@@ -29,7 +32,7 @@
                     <button class="park-heading-btn btn"><i
                             class="fa-solid fa-angle-down park-heading-btn-icon"></i></button>
                 </div>
-                <p class="park-text">
+                <p class="park-text collapse">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illum eos veniam quidem
                     deleniti
                     aliquid pariatur quam nam in adipisci impedit, similique velit consectetur temporibus iusto est

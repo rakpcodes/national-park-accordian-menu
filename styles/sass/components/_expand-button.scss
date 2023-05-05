@@ -1,0 +1,14 @@
+.section {
+    &-about {
+        .flex {
+            display: flex;
+            justify-content: right;
+        }
+
+        .btn-expand {
+            border: 0.2rem solid rgb(10, 156, 214);
+            color: rgb(10, 156, 214);
+            padding: 0.5rem 1.5rem;
+        }
+    }
+}
