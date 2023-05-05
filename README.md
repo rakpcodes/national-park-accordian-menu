@@ -26,6 +26,6 @@ Will be looking to fix this issue moving forward!
 
 ## Accessibilty Choices
 
-I decided to make the rotating arrow in each park heading a <button> element for added accessibilty. 
+I decided to make the rotating arrow in each park heading a button element for added accessibilty. 
 Headers can be clicked on regularly and accessed using assistive technology to expand the menus individually. 
-The decision to make the arrows a <button> element was to allow those that might be using a keyboard only to still access and open the menus.
+The decision to make the arrows a button element was to allow those that might be using a keyboard only to still access and open the menus.
