@@ -1,10 +1,14 @@
-.collapse {
-    height: 0;
-    overflow: hidden;
-    transition: all 1s ease-in;
+// .active {
+//     // max-height: max-content !important;
+//     // overflow: visible;
+// }
+
+.rotate-up {
+    rotate: 180deg;
+    transition: all 0.1s ease-in;
 }
 
-.rotate {
-    rotate: 180deg;
-    transition: all 1s ease-in;
+.rotate-down {
+    rotate: 0deg;
+    transition: all 0.1s ease-in;
 }

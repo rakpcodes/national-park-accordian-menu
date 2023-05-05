@@ -1,14 +1,13 @@
-.collapse {
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+.rotate-up {
+  rotate: 180deg;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
-.rotate {
-  rotate: 180deg;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+.rotate-down {
+  rotate: 0deg;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 html {
@@ -330,12 +329,20 @@ html {
 .park-heading:hover {
   color: rgb(97, 97, 97);
   border-bottom: 0.15rem solid rgb(97, 97, 97);
+  cursor: pointer;
+}
+.park-heading-btn :hover {
+  cursor: pointer;
 }
 .park-heading-btn-icon {
   font-size: 3rem;
 }
 .park-text {
+  max-height: 0;
+  overflow: hidden;
   margin-bottom: 3rem;
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
 }
 .park-text-link {
   display: block;
