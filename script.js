@@ -65,6 +65,7 @@ function expandCollapse() {
             expandBtn.innerText = 'Collapse All'
             arrowIconAll.forEach(arrow => {
                 arrow.classList.add('rotate-up')
+                arrow.classList.remove('rotate-down')
             })
         }
     })
