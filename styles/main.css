@@ -23,6 +23,9 @@ html body h1,
 html body h2 {
   font-weight: 900;
 }
+html body .heading-main {
+  text-align: center;
+}
 html body .btn {
   border: none;
   background: transparent;
@@ -308,6 +311,7 @@ html {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  margin-bottom: 4rem;
 }
 .section-about .btn-expand {
   border: 0.2rem solid rgb(10, 156, 214);

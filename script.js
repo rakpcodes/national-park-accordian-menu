@@ -44,18 +44,20 @@ function toggleText() {
         arrow.classList.add('rotate-up')
         arrow.classList.remove('rotate-down')
         parkText.style.maxHeight = `${parkTextHeight}px`
+        console.dir(parkText)
 
     } else {
         arrow.classList.remove('rotate-up')
         arrow.classList.add('rotate-down')
         parkText.style.maxHeight = 0
+        console.dir(parkText)
     }
 
 }
 
-expandBtn.addEventListener('click', expandCollapse)
+expandBtn.addEventListener('click', expandAll)
 
-function expandCollapse() {
+function expandAll() {
 
     parkTextAll.forEach(text => {
         const textHeight = text.scrollHeight
@@ -66,6 +68,15 @@ function expandCollapse() {
             arrowIconAll.forEach(arrow => {
                 arrow.classList.add('rotate-up')
                 arrow.classList.remove('rotate-down')
+            })
+
+        } else if (text.classList.contains('active')) {
+            text.classList.remove('active')
+            text.style.maxHeight = 0
+            expandBtn.innerText = 'Expand All'
+            arrowIconAll.forEach(arrow => {
+                arrow.classList.add('rotate-down')
+                arrow.classList.remove('rotate-up')
             })
         }
     })
