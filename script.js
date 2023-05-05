@@ -53,4 +53,19 @@ function toggleText() {
 
 }
 
+expandBtn.addEventListener('click', expandCollapse)
 
+function expandCollapse() {
+
+    parkTextAll.forEach(text => {
+        const textHeight = text.scrollHeight
+        if (!text.classList.contains('active')) {
+            text.classList.add('active')
+            text.style.maxHeight = `${textHeight}px`
+            expandBtn.innerText = 'Collapse All'
+            arrowIconAll.forEach(arrow => {
+                arrow.classList.add('rotate-up')
+            })
+        }
+    })
+}
