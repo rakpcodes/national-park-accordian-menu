@@ -296,10 +296,20 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  border-bottom: 0.15rem solid black;
+  margin-bottom: 3rem;
 }
-
-.park-heading-btn {
+.park-heading:hover {
+  color: rgb(97, 97, 97);
+  border-bottom: 0.15rem solid rgb(97, 97, 97);
+}
+.park-heading-btn-icon {
   font-size: 3rem;
-  font-weight: 900;
+}
+.park-text {
+  margin-bottom: 3rem;
+}
+.park-text-link {
+  display: block;
 }
